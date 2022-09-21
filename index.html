@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let firstValue = 1;
+        let operator = "+";
+        let secondValue = 2;
+
+
+        firstValue = parseInt(prompt("Quel est la 1ere valeur ?"));
+        operator = prompt("quel est l'opérateur ?")
+        secondValue = parseInt(prompt("Quel est la 2e valeur ?"));
+
+
+        // console.log(parseInt(firstValue) + parseInt(secondValue));
+
+        // if (operator === "+") {
+        //     console.log(firstValue + secondValue);
+        // } else {
+        //     console.log(firstValue - secondValue);
+        // }
+
+
+        // switch (operator) {
+        //     case "+":
+        //         console.log(firstValue + secondValue);
+        //         break;
+        //     case "-":
+        //         console.log(firstValue - secondValue);
+        //         break;
+        //     case "/":
+        //         console.log(firstValue / secondValue);
+        //         break;
+        //     default:
+        //         console.log("Invalid operator");
+        // }
+
+
+        //Mettre des noms différents dans les paramètres par rapport aux variables déjà définies !
+        function calcultest(firstNumber, symbol, secondNumber) {
+            switch (symbol) {
+                case "+":
+                    return firstNumber + secondNumber;
+                    break;
+                case "-":
+                    return firstNumber - secondNumber;
+                    break;
+                case "/":
+                    return firstNumber / secondNumber;
+                    break;
+                case "*":
+                    return firstNumber * secondNumber;
+                    break;
+                default:
+                    return "Invalid operator";
+            }
+        }
+
+        console.log(calcultest(firstValue, operator, secondValue));
+
+        // const random = Math.floor(Math.random() * 100) + 1;
+
+
+    </script>
+
+
+</body>
+
+</html>
